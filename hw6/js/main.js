@@ -111,19 +111,3 @@
 // etc.
 // 10*
 // Створити функцію reduce, join самому як на занятті створювали forEach, map, find, filter і т.д.
-
-
-class Car {
-   #color = 'white';
-   get color (){
-       return this.#color
-   }
-   set color (value){
-       this.#color = value;
-   }
-}
-let car = new Car()
-console.log(car)
-
-car.color = "red"
-console.log(car.color)
