@@ -138,40 +138,40 @@
 
 // 6. Реалізувати функцію, яка виконуватиме математичні операції з введеними користувачем числами
 
-// {
-//     function inquiry() {
-//         let number1 = +prompt("Введите первое число.");
-//         // let sign = +prompt("Введите знак математической операции (+, -, *, /): ");
-//         if (isNaN(number1)) {
-//             alert("Вы ввели не число. Повторите попытку.");
-//         } else {
-//             let number2 = +prompt("Введите второе число.");
-//             if (isNaN(number2)) {
-//                 alert("Вы ввели не число. Повторите попытку.");
-//             } else {
-//                 let sign = prompt("Введите знак математической операции (+, -, *, /).");
-//                 if (sign === "+") {
-//                     result = number1 + number2;
-//                     alert(`${result}`);
-//                 } else if (sign === "-") {
-//                     result = number1 - number2;
-//                     alert(`${result}`)
-//                 } else if (sign === "*") {
-//                     result = number1 * number2;
-//                     alert(`${result}`)
-//                 } else if (sign === "/") {
-//                     result = number1 / number2;
-//                     alert(`${result}`)
-//                 } else {
-//                     alert("Вы ввели не знак. Повторите попытку.")
-//                 }
+{
+    function inquiry() {
+        let number1 = +prompt("Введите первое число.");
+        // let sign = +prompt("Введите знак математической операции (+, -, *, /): ");
+        if (isNaN(number1)) {
+            alert("Вы ввели не число. Повторите попытку.");
+        } else {
+            let number2 = +prompt("Введите второе число.");
+            if (isNaN(number2)) {
+                alert("Вы ввели не число. Повторите попытку.");
+            } else {
+                let sign = prompt("Введите знак математической операции (+, -, *, /).");
+                if (sign === "+") {
+                    result = number1 + number2;
+                    alert(result);
+                } else if (sign === "-") {
+                    result = number1 - number2;
+                    alert(result)
+                } else if (sign === "*") {
+                    result = number1 * number2;
+                    alert(result)
+                } else if (sign === "/") {
+                    result = number1 / number2;
+                    alert(result)
+                } else {
+                    alert("Вы ввели не знак. Повторите попытку.")
+                }
 
-//             }
-//         }
+            }
+        }
         
-//     }
-//     inquiry()
-// }    
+    }
+    inquiry()
+}    
 
 
 
