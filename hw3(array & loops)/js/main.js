@@ -320,3 +320,195 @@
 //     console.log(capitalize("cANBerRa")) //Canberra
 // }
 
+// ДЗ: Циклы
+
+// while confirm
+// {
+//     let i = 0
+//     while (!confirm('Вы устали?')) {
+//         alert('Еще поработаем?')
+//         i++
+//     }
+//     alert(`Вам надоело за ${i} раз.`)
+// }
+
+// array fill
+
+// {
+//     let questions = [];
+//     while (question = prompt("Напишите вопрос.")) {
+//         questions.push(question);
+//     }
+//     console.log(questions)
+// }
+
+// array fill nopush
+
+// {
+//     let questions = [];
+//     let i = 0;
+//     while (question = prompt("Напишите вопрос.")) {
+//         questions[i++] = question;
+//     }
+//     console.log(questions)
+// }
+
+// infinite probability
+
+// {
+//     function rnd() {
+//         let i = 0;
+//         for (i; (a = Math.random()) < 0.9; i++) {
+//             console.log(i, a);
+//             if ((a = Math.random()) > 0.9) {
+//                 console.log(a);
+//                 break
+//             }
+//         }
+//         alert(`Цикл длился ${i} раз.`)
+//     }
+//     rnd()
+// }
+
+// empty loop
+
+// {
+//     let str;
+//     while (str == prompt("напишите число")) {
+
+//     }
+//     alert("Вам надоело");
+// }
+
+// progression sum
+
+// {
+//     let i = 1;
+//     let s;
+//     function sum(n) {
+//         for ( s = i; i < n; i += 3, s += i) { };
+//         return s;
+//     }
+//     alert(sum(13));
+// }
+
+// chess one line
+
+// {
+//     let str = "";
+//     let lattice = "#";
+//     let space = " ";
+//     for (let i = 0; i < 11; i++) {
+//         if (i % 2) {
+//             str += space;
+//         } else {
+//             str += lattice;
+//         }
+//         console.log(i, str)
+//     }
+// }
+
+// numbers
+
+// {
+//     let str10 = "";
+//     for (let i = 0; i < 10; i++){
+//         for (let j = 0; j < 10; j++){
+//             str10 += j;
+//             }
+//         str10 += "\n";
+//         }
+//     console.log(str10)
+// }
+
+// chess
+
+// {
+//     let str10 = "";
+//     for (let i = 0; i < 10; i++){
+//         if (i % 2) {
+//             for (let j = 0; j < 20; j++) {
+//                 if (j % 2) {
+//                     str10 += "#";
+//                 } else {
+//                     str10 += "."
+//                 }
+//             }
+//         } else {
+//             for (let j = 0; j < 20; j++) {
+//                 if (j % 2) {
+//                     str10 += ".";
+//                 } else {
+//                     str10 += "#"
+//                 }
+//             }
+//         }
+//         str10 += "\n";
+//         }
+//     console.log(str10)
+// }
+
+// cubes
+
+// {
+//     let arr = [4,8,6,2,9]
+//     let arrСube = []
+//         for(let i=0; i<arr.length;i++){
+//             arrСube.push(i**3)
+//         }
+//     console.log(arrСube)
+// }
+
+// multiply table
+
+// {
+//     let arr = Array(7);
+//     for (let i = 1; i < 7; i++) {
+//         arr[i] = [...Array(7)].map((_, j) => i * j).slice(1);
+//     }
+//     console.log(arr)
+// }
+
+// read array of objects
+
+// {
+//     const array = [];
+//     function readArrayOfObjects() {
+//         const object = {};
+//         while (object[prompt("key")] = prompt("value")) {
+//             console.log(object);
+//             }
+//         array.push(object);
+//         alert("Обект ввели");
+//         confirm("Продолжим?") ? readArrayOfObjects() : console.log("Закончили");
+//         return array
+//     }
+//     readArrayOfObjects()
+//     console.log("Массив:", array)
+// }
+
+// ромбик
+
+// {
+//     let a = '#';
+//     let s = '.';
+//     let str = "";
+//     let num = 11;
+//     let numarray = [1, 3, 5, 7, 9, 11, 9, 7, 5, 3, 1];
+//     let dots;
+
+//     numarray.forEach((elem) => {
+//         dots = (num - elem) / 2;
+//         for (i = 0; i < dots; i++) {
+//             str += s;
+//         }
+//         for (i = 0; i < elem; i++) {
+//             str += a;
+//         }    
+//         for (i = 0; i < dots; i++) {
+//             str += s;
+//         }
+//         str += `\n`;
+//     })
+//     console.log(str);
+// }
