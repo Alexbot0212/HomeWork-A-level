@@ -45,25 +45,25 @@
 
 // 3. Напишіть функцію squareDigits, яка приймає число та зводить у квадрат кожен символ.
 
-{
+// {
 
-    function squareDigits(a) {
-        let str = String(a);
-        let str2 = 0;
-        for (let i = 0; i < str.length; i++) {
-            str2 += String(str[i] ** 2);
+//     function squareDigits(a) {
+//         let str = String(a);
+//         let str2 = 0;
+//         for (let i = 0; i < str.length; i++) {
+//             str2 += String(str[i] ** 2);
     
-        }
-        str2 = str2.slice(1);
-        return str2
-    }
+//         }
+//         str2 = str2.slice(1);
+//         return str2
+//     }
 
 
-    console.log(squareDigits(91)); // 811
-    console.log(squareDigits(0)); // 0
-    console.log(squareDigits(867)); // 643649
+//     console.log(squareDigits(91)); // 811
+//     console.log(squareDigits(0)); // 0
+//     console.log(squareDigits(867)); // 643649
 
-}
+// }
 
 //------------------------
 
@@ -138,40 +138,40 @@
 
 // 6. Реалізувати функцію, яка виконуватиме математичні операції з введеними користувачем числами
 
-{
-    function inquiry() {
-        let number1 = +prompt("Введите первое число.");
-        // let sign = +prompt("Введите знак математической операции (+, -, *, /): ");
-        if (isNaN(number1)) {
-            alert("Вы ввели не число. Повторите попытку.");
-        } else {
-            let number2 = +prompt("Введите второе число.");
-            if (isNaN(number2)) {
-                alert("Вы ввели не число. Повторите попытку.");
-            } else {
-                let sign = prompt("Введите знак математической операции (+, -, *, /).");
-                if (sign === "+") {
-                    result = number1 + number2;
-                    alert(result);
-                } else if (sign === "-") {
-                    result = number1 - number2;
-                    alert(result)
-                } else if (sign === "*") {
-                    result = number1 * number2;
-                    alert(result)
-                } else if (sign === "/") {
-                    result = number1 / number2;
-                    alert(result)
-                } else {
-                    alert("Вы ввели не знак. Повторите попытку.")
-                }
+// {
+//     function inquiry() {
+//         let number1 = +prompt("Введите первое число.");
+//         // let sign = +prompt("Введите знак математической операции (+, -, *, /): ");
+//         if (isNaN(number1)) {
+//             alert("Вы ввели не число. Повторите попытку.");
+//         } else {
+//             let number2 = +prompt("Введите второе число.");
+//             if (isNaN(number2)) {
+//                 alert("Вы ввели не число. Повторите попытку.");
+//             } else {
+//                 let sign = prompt("Введите знак математической операции (+, -, *, /).");
+//                 if (sign === "+") {
+//                     result = number1 + number2;
+//                     alert(result);
+//                 } else if (sign === "-") {
+//                     result = number1 - number2;
+//                     alert(result)
+//                 } else if (sign === "*") {
+//                     result = number1 * number2;
+//                     alert(result)
+//                 } else if (sign === "/") {
+//                     result = number1 / number2;
+//                     alert(result)
+//                 } else {
+//                     alert("Вы ввели не знак. Повторите попытку.")
+//                 }
 
-            }
-        }
+//             }
+//         }
         
-    }
-    inquiry()
-}    
+//     }
+//     inquiry()
+// }    
 
 
 

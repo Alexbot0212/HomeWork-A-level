@@ -251,15 +251,15 @@
 
 // For Select Option
 
-// {
-//     const currencies = ["USD", "EUR", "GBP", "UAH"]
-//     let str = "<select>"
-//     for (let currency of currencies) {
-//         str += `<option> ${currency}</option>`
-//     }
-//     str += "</select>"
-//     document.write(str) //document.write отобразит ваш HTML на странице
-// }
+{
+    const currencies = ["USD", "EUR", "GBP", "UAH"]
+    let str = "<select>"
+    for (let currency of currencies) {
+        str += `<option> ${currency}</option>`
+    }
+    str += "</select>"
+    document.write(str) //document.write отобразит ваш HTML на странице
+}
 
 
 // For Table Horizontal
@@ -356,9 +356,11 @@
 // infinite probability
 
 // {
+
 //     function rnd() {
 //         let i = 0;
 //         for (i; (a = Math.random()) < 0.9; i++) {
+            
 //             console.log(i, a);
 //             if ((a = Math.random()) > 0.9) {
 //                 console.log(a);
@@ -367,7 +369,7 @@
 //         }
 //         alert(`Цикл длился ${i} раз.`)
 //     }
-//     rnd()
+//     rnd ()
 // }
 
 // empty loop
@@ -462,11 +464,13 @@
 // multiply table
 
 // {
-//     let arr = Array(7);
 //     for (let i = 1; i < 7; i++) {
-//         arr[i] = [...Array(7)].map((_, j) => i * j).slice(1);
+//         let arr=[];
+//         for (let j = 1; j < 7; j++){
+//             arr.push(j*i)
+//         }
+//         console.log(arr)
 //     }
-//     console.log(arr)
 // }
 
 // read array of objects

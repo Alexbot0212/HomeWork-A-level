@@ -101,33 +101,33 @@
 // countries and cities
 
 
-{
-    fetch('https://raw.githubusercontent.com/russ666/all-countries-and-cities-json/master/countries.min.json').then(res => res.json())
-        .then(data => {
-            let countries = Object.keys(data)
-            for (let key of countries) {
-                let option = document.createElement("option")
-                option.innerHTML = key
-                from.append(option)
-            }
-            from.onchange = () => {
-                to.innerHTML = ""
-                const fromValue = from.value
-                const cities = data[fromValue]
-                for (const city of cities) {
-                    option = document.createElement("option")
-                    option.innerHTML = city
-                    to.append(option)
-                }
-            }
+// {
+//     fetch('https://raw.githubusercontent.com/russ666/all-countries-and-cities-json/master/countries.min.json').then(res => res.json())
+//         .then(data => {
+//             let countries = Object.keys(data)
+//             for (let key of countries) {
+//                 let option = document.createElement("option")
+//                 option.innerHTML = key
+//                 from.append(option)
+//             }
+//             from.onchange = () => {
+//                 to.innerHTML = ""
+//                 const fromValue = from.value
+//                 const cities = data[fromValue]
+//                 for (const city of cities) {
+//                     option = document.createElement("option")
+//                     option.innerHTML = city
+//                     to.append(option)
+//                 }
+//             }
                     
                 
             
-            // console.log(data[fromValue])
+//             // console.log(data[fromValue])
             
-            //эта функция запускается когда данные скачиваются.
-            //остальной код работает РАНЬШЕ.
-            //только ТУТ есть переменная data со скачанными данными
-            console.log(data) //изучите структуру, получаемую с сервера в консоли
-        })
-}
+//             //эта функция запускается когда данные скачиваются.
+//             //остальной код работает РАНЬШЕ.
+//             //только ТУТ есть переменная data со скачанными данными
+//             console.log(data) //изучите структуру, получаемую с сервера в консоли
+//         })
+// }
